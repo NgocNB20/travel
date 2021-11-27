@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sidebars/">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./add.css">
+  <link rel="stylesheet" href="./edit.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row menu-header">
+        <div class="col-6">
+          <h1 class="page-header ">CMS</h1>
+        </div>
+        <div class="col-6">
+          <div class="btn-group">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton"
+              data-toggle="dropdown">
+              <i class="fas fa-user"></i>
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/login.html"><i class="fas fa-sign-out-alt"></i>Logout</a>
+              <a class="dropdown-item" href="./edit.html"><i class="fas fa-user"></i>User profile</a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+    </div>
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-3"></div>
+      </div>
+      <div class="row">
+
+        <div class="col-2 sidebar-left mb-auto flex-column">
+          <div class="search">
+            <input type="email" class="form-control search-query" placeholder="Search">
+            <button type="submit" class="btn btn-primary btn-search"><i class="fad fa-search"></i></button>
+
+          </div>
+          <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+            </li>
+            <li>
+              <a href="./view.html" class="nav-link link-dark">
+                <i class="fal fa-pen-square"></i> View Content
+              </a>
+            </li>
+            <li>
+              <a href="./add.html" class="nav-link link-dark">
+                <i class="fas fa-th"></i> From Content
+              </a>
+            </li>
+ 
+          </ul>
+
+        </div>
+        <div class="col-9 sidebar-right">
+          <h2 class="title-add">Edit profile</h2>
+          <h3 class="title-form">Profile form elements</h3>
+          <div class="container ">
+            <div class="row form">
+              <div class="col-10">
+                <form id="form_input">
+                  <div class="form-group ">
+                    <label for="exampleFormControlInput1" class="form-desc">FirtName</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                      placeholder="Enter the first name">
+                      <span class="form-message"></span>
+                  </div>
+                  <div class="form-group ">
+                    <label for="exampleFormControlInput1" class="form-desc">Last Name</label>
+                    <input type="text" class="form-control " id="exampleFormControlInput1"
+                      placeholder="Enter the last name">
+                      <span class="form-message">111111111111111111111</span>
+                  </div>
+                  <div class="form-group ">
+                    <label for="exampleFormControlInput1" class="form-desc">Email</label>
+                     <br><span class="form-email" >ngocmeu200@gmail.com</span>
+                  </div>
+                  <div class="form-group ">
+                    <label for="exampleFormControlInput1" class="form-desc">Phone</label>
+                    <input type="text" class="form-control " id="exampleFormControlInput1"
+                      placeholder="Enter your phone number">
+                      <span class="form-message"></span>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlTextarea1" class="form-desc">Description</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-group">
+                    <input class="btn btn-primary btn_submit123" type="submit" value="Submit Button">
+                    <input class="btn btn-primary btn_reset123" type="button" value="Reset Button">
+                  </div>
+
+
+                </form>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./edit.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+.form-email{
+    border: 0px;
+}
+span.form-message {
+    font-size: 1rem;
+    display: inline-block;
+    padding-top: 1rem;
+}
